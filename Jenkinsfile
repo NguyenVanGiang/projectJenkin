@@ -18,5 +18,13 @@ pipeline {
                 sh "chmod -R +x $WORKSPACE/repo/$BUILD_SCRIPTS"
               }
         }
+        stage('read') {
+           steps {
+               script {
+                   def data = readFile(file: '/src/deploy.yml')
+                   println(data)
+               }
+           }
+       }
     }
 }
