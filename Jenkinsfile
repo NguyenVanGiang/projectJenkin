@@ -1,4 +1,4 @@
- opipeline {
+pipeline {
     agent any
     environment {
         BUILD_SCRIPTS_GIT="https://github.com/NguyenVanGiang/projectJenkin.git"
