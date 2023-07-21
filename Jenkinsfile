@@ -6,9 +6,9 @@ pipeline {
         BUILD_HOME='/git'
       }
    stages {
-    step{
+   
                sh "pwsh aaaaa.sh1"
-           }
+       
    
        
   }
