@@ -7,7 +7,7 @@ pipeline {
       }
    stages {
    
-               sh "pwsh aaaaa.sh1"
+               sh 'pwsh aaaaa.sh1'
        
    
        
