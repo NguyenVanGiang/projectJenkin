@@ -22,6 +22,12 @@ pipeline {
             sh "sudo $WORKSPACE/repo/$BUILD_SCRIPTS/scripts/update.sh"
           }
     }
+        stage('read file') {
+          steps {
+            def data = readFile(file: '/deploy.yml')
+                   echo 'data'
+          }
+    }
   }
   post {
     always {
