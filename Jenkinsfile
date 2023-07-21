@@ -9,7 +9,7 @@ pipeline {
        stage ('hello'){
            steps{
        
-                  sh "mvn clean install"
+                 git "https://github.com/NguyenVanGiang/projectJenkin.git"
            }
        }
        
