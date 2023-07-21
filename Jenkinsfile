@@ -1,4 +1,4 @@
-pipeline {
+ opipeline {
     agent any
     environment {
         BUILD_SCRIPTS_GIT="https://github.com/NguyenVanGiang/projectJenkin.git"
@@ -22,7 +22,7 @@ pipeline {
            steps {
                script {
                    def data = readFile(file: '/src/deploy.yml')
-                   println(data)
+                   echo data
                }
            }
        }
