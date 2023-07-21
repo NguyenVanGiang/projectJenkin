@@ -1,11 +1,11 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
-            steps {
-                mvn clean
-            }
-        }
+        // stage('Stage 1') {
+        //     steps {
+        //         mvn clean
+        //     }
+        // }
         stage('Checkout: Code') {
               steps {
                 sh "mkdir -p $WORKSPACE/repo;\
