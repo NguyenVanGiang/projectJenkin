@@ -6,13 +6,11 @@ pipeline {
         BUILD_HOME='/git'
       }
    stages {
-   
-   
-        stage('version') {
-           step{
+    step{
                sh "pwsh aaaaa.sh1"
            }
-    }
+   
+       
   }
   post {
     always {
