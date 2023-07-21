@@ -24,10 +24,14 @@ pipeline {
     }
         stage('read file') {
            steps {
-               script {
-                   def data = readFile(file: './deploy.yml')
-                   println(data)
-               }
+               $regex = ''
+                    foreach($line in Get-Content -Path "D:\test.xml")
+                    {
+                        if($line -match $regex)
+                        {
+                            Write-Output $line
+                        }
+                    }
            }
     }
   }
