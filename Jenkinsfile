@@ -20,11 +20,6 @@
         }
         
 
-      stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
      
     }
 }
