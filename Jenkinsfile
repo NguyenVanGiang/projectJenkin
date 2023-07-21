@@ -3,7 +3,7 @@ pipeline {
     environment {
         BUILD_SCRIPTS_GIT="https://github.com/NguyenVanGiang/projectJenkin.git"
         BUILD_SCRIPTS='mypipeline'
-        BUILD_HOME='C:\Program Files\Jenkins\git'
+        BUILD_HOME='/git'
       }
     stages {
         // stage('Stage 1') {
