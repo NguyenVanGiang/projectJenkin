@@ -9,7 +9,7 @@ pipeline {
        stage ('hello'){
            steps{
        
-                   sh 'pwsh ./aaaaa.sh1'
+                   echo ${BUILD_SCRIPTS_GIT}
            }
        }
        
