@@ -23,10 +23,12 @@ pipeline {
           }
     }
         stage('read file') {
-          steps {
-            def data = readFile(file: '/deploy.yml')
-                   echo 'data'
-          }
+           steps {
+               script {
+                   def data = readFile(file: 'zorg.txt')
+                   println(data)
+               }
+           }
     }
   }
   post {
