@@ -9,7 +9,7 @@ pipeline {
        stage ('hello'){
            steps{
        
-                   echo ${BUILD_SCRIPTS_GIT}
+                   echo 'hello'
            }
        }
        
