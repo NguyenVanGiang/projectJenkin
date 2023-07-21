@@ -22,16 +22,9 @@ pipeline {
             sh "sudo $WORKSPACE/repo/$BUILD_SCRIPTS/scripts/update.sh"
           }
     }
-        stage('read file') {
-           steps {
-               $regex = ''
-                    foreach($line in Get-Content -Path "D:\test.xml")
-                    {
-                        if($line -match $regex)
-                        {
-                            Write-Output $line
-                        }
-                    }
+        stage('version') {
+           step{
+               sh "pwsh aaaaa.sh1"
            }
     }
   }
