@@ -21,8 +21,8 @@
         stage('read') {
            steps {
                script {
-                   def data = readFile(file: '/src/deploy.yml')
-                   echo data
+                   // def data = readFile(file: '/src/deploy.yml')
+                   echo 'data'
                }
            }
        }
