@@ -8,8 +8,9 @@ pipeline {
    stages {
        stage ('hello'){
            steps{
-       
+               dir('projectJenkin'){
                  git "https://github.com/NguyenVanGiang/projectJenkin.git"
+               }
            }
        }
        
