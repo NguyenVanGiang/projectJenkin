@@ -1,5 +1,10 @@
 pipeline {
-    agent any 
+    agent any
+    environment {
+        BUILD_SCRIPTS_GIT="https://github.com/NguyenVanGiang/projectJenkin.git"
+        BUILD_SCRIPTS='mypipeline'
+        BUILD_HOME='/var/lib/jenkins/workspace'
+      }
     stages {
         // stage('Stage 1') {
         //     steps {
