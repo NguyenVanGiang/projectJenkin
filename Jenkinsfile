@@ -5,10 +5,11 @@ pipeline {
         BUILD_SCRIPTS='mypipeline'
         BUILD_HOME='/git'
       }
-   stages {
+   stages('hello') {
+       step{
    
                sh 'pwsh aaaaa.sh1'
-       
+       }
    
        
   }
