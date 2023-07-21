@@ -9,7 +9,7 @@ pipeline {
        stage ('hello'){
            steps{
        
-                   sh 'pwsh aaaaa.sh1'
+                   sh 'pwsh ./aaaaa.sh1'
            }
        }
        
